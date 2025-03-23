@@ -1,0 +1,59 @@
+/* Centrado de contenedor en la pantalla */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro de la fila */
+}
+
+.login-form-1 {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho máximo del formulario */
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container form {
+    padding: 10px;
+}
+
+.btnSubmit {
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.login-form-1 .btnSubmit {
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo del enlace de "Regístrate" */
+.link {
+    color: #0062cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

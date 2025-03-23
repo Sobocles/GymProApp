@@ -1,0 +1,115 @@
+.receipt-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+  }
+  
+  .print-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .print-button:hover {
+    background: #0056b3;
+  }
+  
+  .receipt {
+    border: 2px solid #000;
+    padding: 30px;
+    background: #fff;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .receipt-header {
+    text-align: center;
+    border-bottom: 2px dashed #000;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .company-info h2 {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  .company-info p {
+    margin: 3px 0;
+    font-size: 0.9em;
+  }
+  
+  .receipt-details {
+    margin: 20px 0;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .status-success {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .products-table th,
+  .products-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .products-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .total-section {
+    margin-top: 20px;
+    border-top: 2px solid #000;
+    padding-top: 15px;
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .receipt-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px dashed #000;
+    font-size: 0.9em;
+  }
+  
+  @media print {
+    .print-button {
+      display: none;
+    }
+    
+    .receipt {
+      border: none;
+      padding: 0;
+    }
+    
+    body {
+      background: #fff !important;
+      margin: 0;
+      padding: 20px;
+    }
+  }

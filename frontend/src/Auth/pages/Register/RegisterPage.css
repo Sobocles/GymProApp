@@ -1,0 +1,151 @@
+/* Estilo general del contenedor */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+/* Estructura general del formulario */
+.register-form-2 {
+    width: 100%;
+    max-width: 450px; /* Limita el ancho máximo del formulario */
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* Título del formulario */
+.register-form-2 h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs dentro del formulario */
+.register-form-2 .form-group input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    transition: border 0.3s ease;
+}
+
+/* Efecto hover en los inputs */
+.register-form-2 .form-group input:focus {
+    border: 1px solid #0062cc;
+    outline: none;
+}
+
+/* Estilo general de los botones */
+.btnSubmit {
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Botón para registrar */
+.register-form-2 .btnSubmit {
+    color: #fff;
+    background-color: #28a745; 
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Contenido adicional (links, textos) */
+.register-container form {
+    padding: 10px;
+}
+
+/* Estilo para los enlaces */
+.link {
+    color: #0062cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.input-group {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+
+.input-group .input-group-text {
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+}
+
+
+.input-group input {
+    padding-right: 40px;
+}
+
+
+.input-group input:focus {
+    border-color: #0062cc; 
+    outline: none;
+}
+
+/* Añade estos estilos a tu archivo RegisterPage.css */
+
+.disabled-link {
+    pointer-events: none;
+    color: #6c757d;
+    text-decoration: none;
+    opacity: 0.65;
+}
+
+.btnSubmit {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0275d8;
+    transition: all 0.3s ease;
+}
+
+.btnSubmit:hover {
+    background-color: #0069d9;
+}
+
+.btnSubmit:disabled {
+    background-color: #0275d8;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* Estilos para el spinner */
+.btnSubmit .spinner-border {
+    vertical-align: middle;
+    width: 1.2rem;
+    height: 1.2rem;
+}
